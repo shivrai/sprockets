@@ -134,7 +134,7 @@ def _DebugLexer(lexer, data):
   lexer.input(data)
   tok = lexer.token()
   while tok:
-    print tok
+    logging.debug(tok)
     tok = lexer.token()
 
 
